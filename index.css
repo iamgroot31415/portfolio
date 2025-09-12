@@ -1,0 +1,38 @@
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+img{
+    height: 90px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /* Optional: Makes borders collapse into a single line */
+}
+th, td {
+    padding: 8px; /* Optional: Adds spacing within cells */
+    text-align: left; /* Optional: Aligns text to the left */
+}
+
+footer ul {
+    list-style: none;
+    display: block;
+    
+}
+
+footer {
+    text-align: center;
+    background-color: #b2e3d2;
+    color: #fff;
+
+}
+
+/* .contact {
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+} */

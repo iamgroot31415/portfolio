@@ -1,7 +1,23 @@
+body {
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    background-color: #f7fbf9;
+}
+
+.container {
+    margin-top: 2rem;
+    margin-left:1rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+
 .head {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
 
 }
 
@@ -9,13 +25,52 @@ img{
     height: 90px;
 }
 
+.objective {
+    margin-top: 15px;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+}
+
+.academics {
+    padding: 16px;
+    margin-top: 16px;
+    box-shadow: 18px -20px 18px rgba(15, 23, 42, 0.04);
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse; /* Optional: Makes borders collapse into a single line */
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
 }
 th, td {
     padding: 8px; /* Optional: Adds spacing within cells */
     text-align: left; /* Optional: Aligns text to the left */
+}
+
+ /*grid*/
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+box-shadow: 18px -20px 18px rgba(15, 23, 42, 0.04);
+padding: 1rem;
+margin-top: 1rem;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+
+ .div1 p {                /*internship Experience */
+    margin: 9px;
 }
 
 footer ul {
@@ -30,9 +85,3 @@ footer {
     color: #fff;
 
 }
-
-/* .contact {
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-} */
